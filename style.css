@@ -9,7 +9,7 @@ body{
     align-items: center;
     font-family: 'Coming Soon', cursive;
     color: cadetblue;
-    background-image: url('images/loose_leaf_paper.png');
+    background-image: url('loose_leaf_paper.png');
     background-size: cover;
     background-color: var(--pencil);
 }
