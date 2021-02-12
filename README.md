@@ -1,3 +1,3 @@
-#Tic-Tac-Toe for The Odin Project
+<h1>The Odin Project: Tic-Tac-Toe</h1>
 
-The player names and markers are inputs thatcan be changed!
+The player names and markers are inputs that can be changed!
