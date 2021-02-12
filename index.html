@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="title">Tic-Tac-Toe</h1>
+    </header>
+
+    <div id="gametype" class="gametype">
+        <div class="gametype-button" id="vs-human">
+            <h1>vs Human</h1>
+        </div>
+
+        <div class="gametype-button" id="vs-cpu">
+            <h1>vs CPU</h1>
+        </div>
+    </div>
+
+    <main id="main" class="main">
+        <div class="message" id="message">Player 1's turn</div>
+        <div class="gameplay">
+            <div class="player_1_container">
+                <div class="player-name-and-score">
+                    <input maxlength="10" class="player_name" type="text" name="" id="p1-name" placeholder="Player 1" value="Player 1">
+                    <span>:</span>
+                    <input maxlength="1" class="player_marker" type="text" name="" id="p1-marker" placeholder="X" value="X">
+                </div>
+                <span class="player_score" id="p1-score"></span>
+            </div>
+                <div class="gameboard">
+                    <div id="field-0" class="field" data-index="0"></div>
+                    <div id="field-1" class="field" data-index="1"></div>
+                    <div id="field-2" class="field" data-index="2"></div>
+                    <div id="field-3" class="field" data-index="3"></div>
+                    <div id="field-4" class="field" data-index="4"></div>
+                    <div id="field-5" class="field" data-index="5"></div>
+                    <div id="field-6" class="field" data-index="6"></div>
+                    <div id="field-7" class="field" data-index="7"></div>
+                    <div id="field-8" class="field" data-index="8"></div>
+                </div>
+            <div class="player_2_container">
+                <div class="player-name-and-score">
+                    <input maxlength="10" class="player_name" type="text" name="" id="p2-name" placeholder="Player 2" value="Player 2">
+                    <span>:</span>
+                    <input maxlength="1" class="player_marker" type="text" name="" id="p2-marker" placeholder="O" value="O">
+                </div>
+                <span class="player_score" id="p2-score"></span>
+            </div>
+        </div>
+        <div class="button-container">
+            <button id="clear-button">Clear Board</button>
+            <button id="restart-button">Restart Match</button>
+        </div>
+
+    </main>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

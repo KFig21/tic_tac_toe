@@ -1,0 +1,212 @@
+:root{
+    --pencil: rgb(40, 43, 44);
+    --winnerGreen: #109748;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Coming Soon', cursive;
+    color: cadetblue;
+    background-image: url('images/loose_leaf_paper.png');
+    background-size: cover;
+    background-color: var(--pencil);
+}
+
+#main{
+    align-items: center;
+    justify-content: center;
+    display: none;
+    flex-direction: column;
+}
+
+.header{
+    margin-top: 20px;
+}
+    .title{
+        color: var(--pencil);
+        font-size: 64px;
+    }
+
+.message{
+    margin-bottom: 30px;
+    color: var(--pencil);
+    font-size: 30px;
+    font-weight: 700;
+    background-color: rgba(255, 255, 0, 0.57);
+    padding: 5px 20px 1px 20px;
+    transform: skew(-4deg);
+}
+
+.gameplay{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+    .player_1_container, .player_2_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: var(--pencil);
+        font-size: 30px;
+        font-weight: 700;
+        margin: 25px;
+        max-width: 300px;
+        min-width: 200px;
+    }
+        .player-name-and-score{
+            display: flex;
+            flex-direction: row;
+        }
+            .player_name{
+                font-family: 'Coming Soon', cursive;
+                color: var(--pencil);
+                background-color: transparent;
+                text-align: center;
+                outline: none;
+                border: none;
+                font-size: 40px;
+                font-weight: 700;
+                width: 100%;
+            }
+            .player_score{
+                font-family: 'Coming Soon', cursive;
+                color: var(--pencil);
+                font-size: 50px;
+                font-weight: 700;
+                margin-top: -7px;
+                height: 50px;
+            }
+            .player_marker{
+                font-family: 'Coming Soon', cursive;
+                color: var(--pencil);
+                background-color: transparent;
+                text-align: center;
+                outline: none;
+                border: none;
+                font-size: 40px;
+                font-weight: 700;
+                width: 40px;
+            }
+
+.gameboard{
+    height: 300px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    color: var(--pencil);
+    font-size: 70px;
+    transform: skew(-4deg);
+}
+    .field{
+        background-color: transparent;
+        height: 100px;
+        width: 100px;
+        margin: auto;
+        font-family: 'Architects Daughter', cursive;
+        transition: ease 0.17s;
+    }
+        .field:hover{
+            background-color: rgba(204, 0, 255, 0.144) ;
+        }
+        #field-0, #field-1, #field-3, #field-4{
+            border-right: solid 5px var(--pencil);
+            border-bottom: solid 5px var(--pencil);
+        }
+        #field-6, #field-7{
+            border-right: solid 5px var(--pencil);
+        }
+        #field-2, #field-5{
+            border-bottom: solid 5px var(--pencil);
+        }
+
+.button-container{
+    display: flex;
+    flex-direction: row;
+}
+    #clear-button, #restart-button{
+        color: var(--pencil);
+        display: flex;
+        font-family: 'Coming Soon', cursive;
+        background-color: transparent;
+        font-size: 30px;
+        font-weight: 700;
+        padding: 5px 15px 1px 15px;
+        margin: 40px 20px;
+        /* border-radius: 5px; */
+        border: none;
+        outline: none;
+        transition: ease-in 0.2s;
+        transform: skew(-4deg);
+    }
+        #clear-button:hover{
+            background-color: rgba(57, 235, 66, 0.57);
+        }
+        #restart-button:hover{
+            background-color: rgba(253, 63, 63, 0.5);
+        }
+
+.gametype{
+    color: var(--pencil);
+    font-family: 'Coming Soon', cursive;
+    background-color: transparent;
+    font-size: 30px;
+    font-weight: 700;
+}
+    .gametype-button{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+
+@media (max-width: 800px) {
+    body{
+        background-position: center;
+        width: 350px;
+    }
+    .title{
+        color: var(--pencil);
+        font-size: 44px;
+        margin: 0px;
+    }
+    .gameplay{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+    }
+    .player_name{
+        font-size: 30px;
+    }
+    .player_score{
+        font-size: 50px;
+    }
+    .player_marker{
+        font-size: 30px;
+    }
+    .message{
+        margin-bottom: 0px;
+    }
+    #clear-button, #restart-button{
+        margin: 0px 20px;
+    }
+    .player_1_container{
+        margin-top: 5px;
+    }
+    .player_2_container{
+        margin-bottom: 5px;
+    }
+}
