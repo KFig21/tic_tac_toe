@@ -11,7 +11,7 @@ body{
     color: cadetblue;
     background-image: url('loose_leaf_paper.png');
     background-size: cover;
-    background-color: var(--pencil);
+    background-color: whitesmoke;
 }
 
 #main{
